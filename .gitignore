@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Vite build output
+frontend/dist/
+frontend/.vite/
+
+# Env files (keep .env.example, ignore real .env)
+.env
+!.env.example
+
+# Model weights (large binary files — keep out of git)
+*.pth
+*.pt
+*.ckpt
+*.bin
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp uploads
+tmp/
