@@ -45,7 +45,8 @@ fastapi-server/
 ├── modelA_nose.pth    ← ⬅ copy from Google Drive
 ├── modelB_eyes.pth    ← ⬅ copy from Google Drive
 ├── modelB_nose.pth    ← ⬅ copy from Google Drive
-└── best_model.pth     ← ⬅ copy from Google Drive (optional, ModelC ViT)
+└── best_model2.pth     ← ⬅ copy from Google Drive ( ModelC ViT)
+└── model_D.pth
 ```
 
 > **If your weights are in a different folder** you can tell FastAPI where they
@@ -79,7 +80,7 @@ python main.py
 
 You should see output like:
 ```
-✅ Loaded 5 models (including ModelC ViT) on cuda
+✅ Loaded 6 models (including ModelC ViT) on cuda
 INFO:     Uvicorn running on http://0.0.0.0:8000
 ```
 
