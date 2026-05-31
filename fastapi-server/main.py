@@ -75,7 +75,7 @@ MODEL_META = [
     {"name": "Model B – Simple CNN", "region": "Eyes & Nose", "weight": 1.0},
     {"name": "Model B – Simple CNN", "region": "Eyes & Nose", "weight": 1.0},
     {"name": "Model D – Xception",   "region": "Mouth",       "weight": 1.0},
-    {"name": "Model C – ViT",        "region": "Full Face",   "weight": 2.5},
+    {"name": "Model C – ViT",        "region": "Full Face",   "weight": 2.0},
 ]
 
 # ─── Lazy-load singletons ─────────────────────────────────────────────────────
@@ -329,7 +329,7 @@ def run_frame(frame, mtcnn, models):
     # Weighted majority vote (ModelC counts 2.5x)
     weights = [1.0, 1.0, 1.0, 1.0, 1.0]
     if len(models) == 6:
-        weights.append(2.5)
+        weights.append(2.0)
     preds_only = [p for p, _ in raw_preds]
     vote = majority_vote(preds_only, weights=weights)
 
